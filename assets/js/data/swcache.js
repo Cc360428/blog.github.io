@@ -1,43 +1,43 @@
 const resource = [
 
   /* --- CSS --- */
-  '/blog.github.io/assets/css/style.css',
+  '/blog/assets/css/style.css',
 
   /* --- PWA --- */
-  '/blog.github.io/app.js',
-  '/blog.github.io/sw.js',
+  '/blog/app.js',
+  '/blog/sw.js',
 
   /* --- HTML --- */
-  '/blog.github.io/index.html',
-  '/blog.github.io/404.html',
+  '/blog/index.html',
+  '/blog/404.html',
   
-    '/blog.github.io/categories/',
+    '/blog/categories/',
   
-    '/blog.github.io/tags/',
+    '/blog/tags/',
   
-    '/blog.github.io/archives/',
+    '/blog/archives/',
   
-    '/blog.github.io/about/',
+    '/blog/about/',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/blog.github.io/assets/img/favicons/1apple-touch-icon.png',
-    '/blog.github.io/assets/img/favicons/android-chrome-192x192.png',
-    '/blog.github.io/assets/img/favicons/android-chrome-512x512.png',
-    '/blog.github.io/assets/img/favicons/apple-touch-icon.png',
-    '/blog.github.io/assets/img/favicons/favicon-16x16.png',
-    '/blog.github.io/assets/img/favicons/favicon-32x32.png',
-    '/blog.github.io/assets/img/favicons/favicon.ico',
-    '/blog.github.io/assets/img/favicons/mstile-150x150.png',
-    '/blog.github.io/assets/js/dist/categories.min.js',
-    '/blog.github.io/assets/js/dist/commons.min.js',
-    '/blog.github.io/assets/js/dist/home.min.js',
-    '/blog.github.io/assets/js/dist/misc.min.js',
-    '/blog.github.io/assets/js/dist/page.min.js',
-    '/blog.github.io/assets/js/dist/post.min.js',
-    '/blog.github.io/assets/js/dist/pvreport.min.js'
+    '/blog/assets/img/favicons/1apple-touch-icon.png',
+    '/blog/assets/img/favicons/android-chrome-192x192.png',
+    '/blog/assets/img/favicons/android-chrome-512x512.png',
+    '/blog/assets/img/favicons/apple-touch-icon.png',
+    '/blog/assets/img/favicons/favicon-16x16.png',
+    '/blog/assets/img/favicons/favicon-32x32.png',
+    '/blog/assets/img/favicons/favicon.ico',
+    '/blog/assets/img/favicons/mstile-150x150.png',
+    '/blog/assets/js/dist/categories.min.js',
+    '/blog/assets/js/dist/commons.min.js',
+    '/blog/assets/js/dist/home.min.js',
+    '/blog/assets/js/dist/misc.min.js',
+    '/blog/assets/js/dist/page.min.js',
+    '/blog/assets/js/dist/post.min.js',
+    '/blog/assets/js/dist/pvreport.min.js'
 
 ];
 

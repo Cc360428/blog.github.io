@@ -272,7 +272,7 @@
       <a href="/blog.github.io/" class="mx-auto">
         
         
-        <img src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
+        <img src="https://cc360428.github.io/blog.github.io//commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
         
       </a>
     </div>
@@ -938,6 +938,18 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -1035,7 +1047,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1506 字">
+  title="1505 字">
   <em>8 分钟</em>阅读</span>
 
     </div>
@@ -1051,7 +1063,7 @@
   <p>表级锁 和 行级锁</p>
 </blockquote>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/system/mysql/mysql锁.png" alt="mysql 锁" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/system/mysql/mysql锁.png" alt="mysql 锁" data-proofer-ignore></p>
 
 <pre><code class="language-mysql">mysql&gt; show tables;
 +----------------+
@@ -1088,21 +1100,21 @@
   <li>
     <p><code class="language-plaintext highlighter-rouge">Table_locks_waited</code>：出现表级锁定争用而发生等待的请求数</p>
 
-    <p>#### 表锁两种形式<code class="language-plaintext highlighter-rouge">lock table 表名称1 read(write)</code></p>
+    <h4 id="表锁两种形式lock-table-表名称1-readwrite"><span class="mr-2">表锁两种形式<code class="language-plaintext highlighter-rouge"><span class="mr-2">lock table 表名称1 read(write)</code></span><a href="#表锁两种形式lock-table-表名称1-readwrite" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
   </li>
 </ul>
 
 <blockquote>
   <p>开启<code class="language-plaintext highlighter-rouge">read</code> 其他 <code class="language-plaintext highlighter-rouge">select ... </code> 可以查但是不能修改会自动加入行锁</p>
 
-  <p>开启<code class="language-plaintext highlighter-rouge">write</code>  其他<code class="language-plaintext highlighter-rouge">select ....</code>  会查询锁住</p>
+  <p>开启<code class="language-plaintext highlighter-rouge">write</code> 其他<code class="language-plaintext highlighter-rouge">select ....</code> 会查询锁住</p>
 </blockquote>
 
 <ul>
   <li>表共享读锁（Table Read Lock）</li>
 </ul>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/system/mysql/表读锁.png" alt="mysql 锁" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/system/mysql/表读锁.png" alt="mysql 锁" data-proofer-ignore></p>
 
 <pre><code class="language-mysql">1、session1: lock table mylock read; – 给mylock表加读锁
 2、session1: select * from mylock; – 可以查询
@@ -1118,7 +1130,7 @@
   <li>表独占写锁（Table Write Lock）</li>
 </ul>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/system/mysql/表写锁.png" alt="mysql 锁" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/system/mysql/表写锁.png" alt="mysql 锁" data-proofer-ignore></p>
 
 <pre><code class="language-mysql">1、session1: lock table mylock write; – 给mylock表加写锁
 2、session1: select * from mylock; – 当前session可以查询
@@ -1140,14 +1152,14 @@
 
 <ol>
   <li>
-    <p>一个是事务隔离问题，比如在<code class="language-plaintext highlighter-rouge">可重复隔离级别</code>下，会话A在2次查询期间，会话B对表结构做了修改，<code class="language-plaintext highlighter-rouge">两次查询结果就会不一致</code>，无法满足可重	复读的要求；</p>
+    <p>一个是事务隔离问题，比如在<code class="language-plaintext highlighter-rouge">可重复隔离级别</code>下，会话 A 在 2 次查询期间，会话 B 对表结构做了修改，<code class="language-plaintext highlighter-rouge">两次查询结果就会不一致</code>，无法满足可重 复读的要求；</p>
   </li>
   <li>
-    <p>另外一个是<code class="language-plaintext highlighter-rouge">数据复制的问题</code>，比如会话A先执行了更新语句期间，另外一个会话B做了表结构变更并且先提交，就会导致slave在重做时，先重做alter，再重做update时就会出现复制错误的现象</p>
+    <p>另外一个是<code class="language-plaintext highlighter-rouge">数据复制的问题</code>，比如会话 A 先执行了更新语句期间，另外一个会话 B 做了表结构变更并且先提交，就会导致 slave 在重做时，先重做 alter，再重做 update 时就会出现复制错误的现象</p>
   </li>
 </ol>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/system/mysql/元数据锁(MDL).png" alt="mysql 锁" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/system/mysql/元数据锁(MDL).png" alt="mysql 锁" data-proofer-ignore></p>
 
 <pre><code class="language-mysql">1、session1: begin;–开启事务
 select * from mylock;–加MDL读锁
@@ -1167,7 +1179,7 @@ select * from mylock;–加MDL读锁
 <ul>
   <li><code class="language-plaintext highlighter-rouge">记录锁（Record Locks）</code>:锁定索引中一条记录。 例如主键或唯一索引等值条件指定 where id=3</li>
   <li><code class="language-plaintext highlighter-rouge">间隙锁（Gap Locks）</code>: 锁定索引记录之间的间隙，或者是某一条记录之前和之后加锁，该机制主要为了解决幻读问题。</li>
-  <li><code class="language-plaintext highlighter-rouge">Next-Key 锁</code>: 记录锁 + 间隙锁，RR隔离级下默认使用Next-Key锁，即锁定当前记录也锁定记录间隙。</li>
+  <li><code class="language-plaintext highlighter-rouge">Next-Key 锁</code>: 记录锁 + 间隙锁，RR 隔离级下默认使用 Next-Key 锁，即锁定当前记录也锁定记录间隙。</li>
 </ul>
 
 <h4 id="按照功能分类"><span class="mr-2">按照功能分类</span><a href="#按照功能分类" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
@@ -1216,7 +1228,7 @@ ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction
       --手动加id=1的行写锁,
       select * from mylock  where id=1 for update;
 2、session2：select * from mylock  where id=2 ; -- 可以访问
-3、session2: select * from mylock  where id=1 ; -- 可以读 不加锁 
+3、session2: select * from mylock  where id=1 ; -- 可以读 不加锁
 4、session2: select * from mylock  where id=1 lock in share mode ; -- 加读锁被阻塞
 5、session1：commit; -- 提交事务 或者 rollback 释放写锁
 5、session2：执行成功
@@ -1228,13 +1240,13 @@ ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction
 </ul>
 
 <blockquote>
-  <p>在索引记录之间的间隙中加锁，或者是在某一条索引记录之前或者之后加锁，并不包括该索引记录本身。gap lock的机制主要是<code class="language-plaintext highlighter-rouge">解决</code>可重复读模式下的的<code class="language-plaintext highlighter-rouge">幻读问题</code></p>
+  <p>在索引记录之间的间隙中加锁，或者是在某一条索引记录之前或者之后加锁，并不包括该索引记录本身。gap lock 的机制主要是<code class="language-plaintext highlighter-rouge">解决</code>可重复读模式下的的<code class="language-plaintext highlighter-rouge">幻读问题</code></p>
 </blockquote>
 
 <h3 id="死锁"><span class="mr-2">死锁</span><a href="#死锁" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <blockquote>
-  <p>两个session 互相等待 对方资源释放之后才能释放自己资源造成死锁</p>
+  <p>两个 session 互相等待 对方资源释放之后才能释放自己资源造成死锁</p>
 </blockquote>
 
 <pre><code class="language-mysql">1、session1: begin;--开启事务未提交
@@ -1242,7 +1254,7 @@ ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction
       update mylock set name='m' where id=1;
 2、session2：begin;--开启事务未提交
 --手动加行写锁 id=2 ，使用索引
-      update mylock set name='m' where id=2;   
+      update mylock set name='m' where id=2;
 3、session1: update mylock set name='nn' where id=2; -- 加写锁被阻塞
 4、session2：update mylock set name='nn' where id=1; -- 加写锁会死锁，不允许操作
 ERROR 1213 (40001): Deadlock found when trying to get lock; try restarting
@@ -1251,9 +1263,7 @@ transaction
 
 <h4 id="避免死锁"><span class="mr-2">避免死锁</span><a href="#避免死锁" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>越是轻量的事务，占有越少的锁资源，这样发生死锁的几率就越小
-1.避免使用子查询，尽量使用主键等等，以<code class="language-plaintext highlighter-rouge">提高SQL运行速度</code>
-2.尽量快提交事务，<code class="language-plaintext highlighter-rouge">减少持有锁的时间</code></p>
+<p>越是轻量的事务，占有越少的锁资源，这样发生死锁的几率就越小 1.避免使用子查询，尽量使用主键等等，以<code class="language-plaintext highlighter-rouge">提高SQL运行速度</code> 2.尽量快提交事务，<code class="language-plaintext highlighter-rouge">减少持有锁的时间</code></p>
 
 </div>
 

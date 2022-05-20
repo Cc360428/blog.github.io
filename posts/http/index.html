@@ -44,8 +44,8 @@
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="HTTP协议" />
 <meta property="og:locale" content="zh_CN" />
-<meta name="description" content="HTTP协议" />
-<meta property="og:description" content="HTTP协议" />
+<meta name="description" content="HTTP 协议" />
+<meta property="og:description" content="HTTP 协议" />
 <link rel="canonical" href="http://localhost:4000/blog.github.io/posts/http/" />
 <meta property="og:url" content="http://localhost:4000/blog.github.io/posts/http/" />
 <meta property="og:site_name" content="Cc" />
@@ -54,7 +54,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="HTTP协议" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-08-20T12:48:54+08:00","datePublished":"2019-08-20T12:48:54+08:00","description":"HTTP协议","headline":"HTTP协议","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog.github.io/posts/http/"},"url":"http://localhost:4000/blog.github.io/posts/http/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-08-20T12:48:54+08:00","datePublished":"2019-08-20T12:48:54+08:00","description":"HTTP 协议","headline":"HTTP协议","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog.github.io/posts/http/"},"url":"http://localhost:4000/blog.github.io/posts/http/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -272,7 +272,7 @@
       <a href="/blog.github.io/" class="mx-auto">
         
         
-        <img src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
+        <img src="https://cc360428.github.io/blog.github.io//commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
         
       </a>
     </div>
@@ -858,7 +858,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="2844 字">
+  title="2846 字">
   <em>15 分钟</em>阅读</span>
 
     </div>
@@ -868,7 +868,7 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <h2 id="http协议"><span class="mr-2">HTTP协议</span><a href="#http协议" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <h2 id="http-协议"><span class="mr-2">HTTP 协议</span><a href="#http-协议" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <blockquote>
   <p><code class="language-plaintext highlighter-rouge">Hyper Text Transfer Protocol </code>超文本传输协议</p>
@@ -885,12 +885,12 @@
   <li>
     <p>客户端</p>
 
-    <p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/network/httpMessageClient.png" alt="客户端消息结构体" data-proofer-ignore></p>
+    <p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/network/httpMessageClient.png" alt="客户端消息结构体" data-proofer-ignore></p>
   </li>
   <li>
     <p>服务端</p>
 
-    <p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/network/httpMessageServer.jpg" alt="服务端消息结构体" data-proofer-ignore></p>
+    <p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/network/httpMessageServer.jpg" alt="服务端消息结构体" data-proofer-ignore></p>
   </li>
 </ul>
 
@@ -898,7 +898,7 @@
 
 <ul>
   <li>HTTP/1.0：GET、 POST 、 HEAD</li>
-  <li>HTTP/1.1：增加了OPTIONS、PUT、PATCH、DELETE、TRACE 、 CONNECT</li>
+  <li>HTTP/1.1：增加了 OPTIONS、PUT、PATCH、DELETE、TRACE 、 CONNECT</li>
 </ul>
 
 <div class="table-wrapper"><table>
@@ -970,23 +970,23 @@
   <tbody>
     <tr>
       <td style="text-align: left">Allow</td>
-      <td style="text-align: left">服务器支持哪些请求方法（如GET、POST等）。</td>
+      <td style="text-align: left">服务器支持哪些请求方法（如 GET、POST 等）。</td>
     </tr>
     <tr>
       <td style="text-align: left">Content-Encoding</td>
-      <td style="text-align: left">文档的编码（Encode）方法。只有在解码之后才可以得到Content-Type头指定的内容类型。利用gzip压缩文档能够显著地减少HTML文档的下载时间。Java的GZIPOutputStream可以很方便地进行gzip压缩，但只有Unix上的Netscape和Windows上的IE 4、IE 5才支持它。因此，Servlet应该通过查看Accept-Encoding头（即request.getHeader(“Accept-Encoding”)）检查浏览器是否支持gzip，为支持gzip的浏览器返回经gzip压缩的HTML页面，为其他浏览器返回普通页面。</td>
+      <td style="text-align: left">文档的编码（Encode）方法。只有在解码之后才可以得到 Content-Type 头指定的内容类型。利用 gzip 压缩文档能够显著地减少 HTML 文档的下载时间。Java 的 GZIPOutputStream 可以很方便地进行 gzip 压缩，但只有 Unix 上的 Netscape 和 Windows 上的 IE 4、IE 5 才支持它。因此，Servlet 应该通过查看 Accept-Encoding 头（即 request.getHeader(“Accept-Encoding”)）检查浏览器是否支持 gzip，为支持 gzip 的浏览器返回经 gzip 压缩的 HTML 页面，为其他浏览器返回普通页面。</td>
     </tr>
     <tr>
       <td style="text-align: left">Content-Length</td>
-      <td style="text-align: left">表示内容长度。只有当浏览器使用持久HTTP连接时才需要这个数据。如果你想要利用持久连接的优势，可以把输出文档写入 ByteArrayOutputStream，完成后查看其大小，然后把该值放入Content-Length头，最后通过byteArrayStream.writeTo(response.getOutputStream()发送内容。</td>
+      <td style="text-align: left">表示内容长度。只有当浏览器使用持久 HTTP 连接时才需要这个数据。如果你想要利用持久连接的优势，可以把输出文档写入 ByteArrayOutputStream，完成后查看其大小，然后把该值放入 Content-Length 头，最后通过 byteArrayStream.writeTo(response.getOutputStream()发送内容。</td>
     </tr>
     <tr>
       <td style="text-align: left">Content-Type</td>
-      <td style="text-align: left">表示后面的文档属于什么MIME类型。Servlet默认为text/plain，但通常需要显式地指定为text/html。由于经常要设置Content-Type，因此HttpServletResponse提供了一个专用的方法setContentType。</td>
+      <td style="text-align: left">表示后面的文档属于什么 MIME 类型。Servlet 默认为 text/plain，但通常需要显式地指定为 text/html。由于经常要设置 Content-Type，因此 HttpServletResponse 提供了一个专用的方法 setContentType。</td>
     </tr>
     <tr>
       <td style="text-align: left">Date</td>
-      <td style="text-align: left">当前的GMT时间。你可以用setDateHeader来设置这个头以避免转换时间格式的麻烦。</td>
+      <td style="text-align: left">当前的 GMT 时间。你可以用 setDateHeader 来设置这个头以避免转换时间格式的麻烦。</td>
     </tr>
     <tr>
       <td style="text-align: left">Expires</td>
@@ -994,27 +994,27 @@
     </tr>
     <tr>
       <td style="text-align: left">Last-Modified</td>
-      <td style="text-align: left">文档的最后改动时间。客户可以通过If-Modified-Since请求头提供一个日期，该请求将被视为一个条件GET，只有改动时间迟于指定时间的文档才会返回，否则返回一个304（Not Modified）状态。Last-Modified也可用setDateHeader方法来设置。</td>
+      <td style="text-align: left">文档的最后改动时间。客户可以通过 If-Modified-Since 请求头提供一个日期，该请求将被视为一个条件 GET，只有改动时间迟于指定时间的文档才会返回，否则返回一个 304（Not Modified）状态。Last-Modified 也可用 setDateHeader 方法来设置。</td>
     </tr>
     <tr>
       <td style="text-align: left">Location</td>
-      <td style="text-align: left">表示客户应当到哪里去提取文档。Location通常不是直接设置的，而是通过HttpServletResponse的sendRedirect方法，该方法同时设置状态代码为302。</td>
+      <td style="text-align: left">表示客户应当到哪里去提取文档。Location 通常不是直接设置的，而是通过 HttpServletResponse 的 sendRedirect 方法，该方法同时设置状态代码为 302。</td>
     </tr>
     <tr>
       <td style="text-align: left">Refresh</td>
-      <td style="text-align: left">表示浏览器应该在多少时间之后刷新文档，以秒计。除了刷新当前文档之外，你还可以通过setHeader(“Refresh”, “5; URL=http://host/path”)让浏览器读取指定的页面。 注意这种功能通常是通过设置HTML页面HEAD区的＜META HTTP-EQUIV=”Refresh” CONTENT=”5;URL=http://host/path”＞实现，这是因为，自动刷新或重定向对于那些不能使用CGI或Servlet的HTML编写者十分重要。但是，对于Servlet来说，直接设置Refresh头更加方便。  注意Refresh的意义是”N秒之后刷新本页面或访问指定页面”，而不是”每隔N秒刷新本页面或访问指定页面”。因此，连续刷新要求每次都发送一个Refresh头，而发送204状态代码则可以阻止浏览器继续刷新，不管是使用Refresh头还是＜META HTTP-EQUIV=”Refresh” …＞。  注意Refresh头不属于HTTP 1.1正式规范的一部分，而是一个扩展，但Netscape和IE都支持它。</td>
+      <td style="text-align: left">表示浏览器应该在多少时间之后刷新文档，以秒计。除了刷新当前文档之外，你还可以通过 setHeader(“Refresh”, “5; URL=http://host/path”)让浏览器读取指定的页面。 注意这种功能通常是通过设置 HTML 页面 HEAD 区的＜ META HTTP-EQUIV=”Refresh” CONTENT=”5;URL=http://host/path”＞实现，这是因为，自动刷新或重定向对于那些不能使用 CGI 或 Servlet 的 HTML 编写者十分重要。但是，对于 Servlet 来说，直接设置 Refresh 头更加方便。 注意 Refresh 的意义是”N 秒之后刷新本页面或访问指定页面”，而不是”每隔 N 秒刷新本页面或访问指定页面”。因此，连续刷新要求每次都发送一个 Refresh 头，而发送 204 状态代码则可以阻止浏览器继续刷新，不管是使用 Refresh 头还是＜ META HTTP-EQUIV=”Refresh” …＞。 注意 Refresh 头不属于 HTTP 1.1 正式规范的一部分，而是一个扩展，但 Netscape 和 IE 都支持它。</td>
     </tr>
     <tr>
       <td style="text-align: left">Server</td>
-      <td style="text-align: left">服务器名字。Servlet一般不设置这个值，而是由Web服务器自己设置。</td>
+      <td style="text-align: left">服务器名字。Servlet 一般不设置这个值，而是由 Web 服务器自己设置。</td>
     </tr>
     <tr>
       <td style="text-align: left">Set-Cookie</td>
-      <td style="text-align: left">设置和页面关联的Cookie。Servlet不应使用response.setHeader(“Set-Cookie”, …)，而是应使用HttpServletResponse提供的专用方法addCookie。参见下文有关Cookie设置的讨论。</td>
+      <td style="text-align: left">设置和页面关联的 Cookie。Servlet 不应使用 response.setHeader(“Set-Cookie”, …)，而是应使用 HttpServletResponse 提供的专用方法 addCookie。参见下文有关 Cookie 设置的讨论。</td>
     </tr>
     <tr>
       <td style="text-align: left">WWW-Authenticate</td>
-      <td style="text-align: left">客户应该在Authorization头中提供什么类型的授权信息？在包含401（Unauthorized）状态行的应答中这个头是必需的。例如，response.setHeader(“WWW-Authenticate”, “BASIC realm=＼”executives＼””)。 注意Servlet一般不进行这方面的处理，而是让Web服务器的专门机制来控制受密码保护页面的访问（例如.htaccess）。</td>
+      <td style="text-align: left">客户应该在 Authorization 头中提供什么类型的授权信息？在包含 401（Unauthorized）状态行的应答中这个头是必需的。例如，response.setHeader(“WWW-Authenticate”, “BASIC realm=＼”executives＼””)。 注意 Servlet 一般不进行这方面的处理，而是让 Web 服务器的专门机制来控制受密码保护页面的访问（例如.htaccess）。</td>
     </tr>
   </tbody>
 </table></div>
@@ -1077,7 +1077,7 @@
     <tr>
       <td style="text-align: left">101</td>
       <td style="text-align: left">Switching Protocols</td>
-      <td style="text-align: left">切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议。扩展（http 请求 <code class="language-plaintext highlighter-rouge">websocket</code> 就会提升切换成101）</td>
+      <td style="text-align: left">切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到 HTTP 的新版本协议。扩展（http 请求 <code class="language-plaintext highlighter-rouge">websocket</code> 就会提升切换成 101）</td>
     </tr>
     <tr>
       <td style="text-align: left"> </td>
@@ -1087,7 +1087,7 @@
     <tr>
       <td style="text-align: left">200</td>
       <td style="text-align: left">OK</td>
-      <td style="text-align: left">请求成功。一般用于GET与POST请求</td>
+      <td style="text-align: left">请求成功。一般用于 GET 与 POST 请求</td>
     </tr>
     <tr>
       <td style="text-align: left">201</td>
@@ -1102,7 +1102,7 @@
     <tr>
       <td style="text-align: left">203</td>
       <td style="text-align: left">Non-Authoritative Information</td>
-      <td style="text-align: left">非授权信息。请求成功。但返回的meta信息不在原始的服务器，而是一个副本</td>
+      <td style="text-align: left">非授权信息。请求成功。但返回的 meta 信息不在原始的服务器，而是一个副本</td>
     </tr>
     <tr>
       <td style="text-align: left">204</td>
@@ -1117,7 +1117,7 @@
     <tr>
       <td style="text-align: left">206</td>
       <td style="text-align: left">Partial Content</td>
-      <td style="text-align: left">部分内容。服务器成功处理了部分GET请求</td>
+      <td style="text-align: left">部分内容。服务器成功处理了部分 GET 请求</td>
     </tr>
     <tr>
       <td style="text-align: left"> </td>
@@ -1132,17 +1132,17 @@
     <tr>
       <td style="text-align: left">301</td>
       <td style="text-align: left">Moved Permanently</td>
-      <td style="text-align: left">永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。今后任何新的请求都应使用新的URI代替</td>
+      <td style="text-align: left">永久移动。请求的资源已被永久的移动到新 URI，返回信息会包括新的 URI，浏览器会自动定向到新 URI。今后任何新的请求都应使用新的 URI 代替</td>
     </tr>
     <tr>
       <td style="text-align: left">302</td>
       <td style="text-align: left">Found</td>
-      <td style="text-align: left">临时移动。与301类似。但资源只是临时被移动。客户端应继续使用原有URI</td>
+      <td style="text-align: left">临时移动。与 301 类似。但资源只是临时被移动。客户端应继续使用原有 URI</td>
     </tr>
     <tr>
       <td style="text-align: left">303</td>
       <td style="text-align: left">See Other</td>
-      <td style="text-align: left">查看其它地址。与301类似。使用GET和POST请求查看</td>
+      <td style="text-align: left">查看其它地址。与 301 类似。使用 GET 和 POST 请求查看</td>
     </tr>
     <tr>
       <td style="text-align: left">304</td>
@@ -1157,12 +1157,12 @@
     <tr>
       <td style="text-align: left">306</td>
       <td style="text-align: left">Unused</td>
-      <td style="text-align: left">已经被废弃的HTTP状态码</td>
+      <td style="text-align: left">已经被废弃的 HTTP 状态码</td>
     </tr>
     <tr>
       <td style="text-align: left">307</td>
       <td style="text-align: left">Temporary Redirect</td>
-      <td style="text-align: left">临时重定向。与302类似。使用GET请求重定向</td>
+      <td style="text-align: left">临时重定向。与 302 类似。使用 GET 请求重定向</td>
     </tr>
     <tr>
       <td style="text-align: left"> </td>
@@ -1207,7 +1207,7 @@
     <tr>
       <td style="text-align: left">407</td>
       <td style="text-align: left">Proxy Authentication Required</td>
-      <td style="text-align: left">请求要求代理的身份认证，与401类似，但请求者应当使用代理进行授权</td>
+      <td style="text-align: left">请求要求代理的身份认证，与 401 类似，但请求者应当使用代理进行授权</td>
     </tr>
     <tr>
       <td style="text-align: left">408</td>
@@ -1222,12 +1222,12 @@
     <tr>
       <td style="text-align: left">410</td>
       <td style="text-align: left">Gone</td>
-      <td style="text-align: left">客户端请求的资源已经不存在。410不同于404，如果资源以前有现在被永久删除了可使用410代码，网站设计人员可通过301代码指定资源的新位置</td>
+      <td style="text-align: left">客户端请求的资源已经不存在。410 不同于 404，如果资源以前有现在被永久删除了可使用 410 代码，网站设计人员可通过 301 代码指定资源的新位置</td>
     </tr>
     <tr>
       <td style="text-align: left">411</td>
       <td style="text-align: left">Length Required</td>
-      <td style="text-align: left">服务器无法处理客户端发送的不带Content-Length的请求信息</td>
+      <td style="text-align: left">服务器无法处理客户端发送的不带 Content-Length 的请求信息</td>
     </tr>
     <tr>
       <td style="text-align: left">412</td>
@@ -1237,12 +1237,12 @@
     <tr>
       <td style="text-align: left">413</td>
       <td style="text-align: left">Request Entity Too Large</td>
-      <td style="text-align: left">由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个Retry-After的响应信息</td>
+      <td style="text-align: left">由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个 Retry-After 的响应信息</td>
     </tr>
     <tr>
       <td style="text-align: left">414</td>
       <td style="text-align: left">Request-URI Too Large</td>
-      <td style="text-align: left">请求的URI过长（URI通常为网址），服务器无法处理</td>
+      <td style="text-align: left">请求的 URI 过长（URI 通常为网址），服务器无法处理</td>
     </tr>
     <tr>
       <td style="text-align: left">415</td>
@@ -1257,7 +1257,7 @@
     <tr>
       <td style="text-align: left">417</td>
       <td style="text-align: left">Expectation Failed</td>
-      <td style="text-align: left">服务器无法满足Expect的请求头信息</td>
+      <td style="text-align: left">服务器无法满足 Expect 的请求头信息</td>
     </tr>
     <tr>
       <td style="text-align: left"> </td>
@@ -1282,7 +1282,7 @@
     <tr>
       <td style="text-align: left">503</td>
       <td style="text-align: left">Service Unavailable</td>
-      <td style="text-align: left">由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中</td>
+      <td style="text-align: left">由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的 Retry-After 头信息中</td>
     </tr>
     <tr>
       <td style="text-align: left">504</td>
@@ -1292,33 +1292,34 @@
     <tr>
       <td style="text-align: left">505</td>
       <td style="text-align: left">HTTP Version not supported</td>
-      <td style="text-align: left">服务器不支持请求的HTTP协议的版本，无法完成处理</td>
+      <td style="text-align: left">服务器不支持请求的 HTTP 协议的版本，无法完成处理</td>
     </tr>
   </tbody>
 </table></div>
 
 <h3 id="content-type"><span class="mr-2">content-type</span><a href="#content-type" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
 <ul>
   <li>媒体格式类型
     <ul>
-      <li>text/html ： HTML格式</li>
+      <li>text/html ： HTML 格式</li>
       <li>text/plain ：纯文本格式</li>
-      <li>text/xml ： XML格式</li>
-      <li>image/gif ：gif图片格式</li>
-      <li>image/jpeg ：jpg图片格式</li>
-      <li>image/png：png图片格式</li>
+      <li>text/xml ： XML 格式</li>
+      <li>image/gif ：gif 图片格式</li>
+      <li>image/jpeg ：jpg 图片格式</li>
+      <li>image/png：png 图片格式</li>
     </ul>
   </li>
-  <li>application开头的媒体格式
+  <li>application 开头的媒体格式
     <ul>
-      <li>application/xhtml+xml ：XHTML格式</li>
-      <li>application/xml： XML数据格式</li>
-      <li>application/atom+xml ：Atom XML聚合格式</li>
-      <li>application/json： JSON数据格式</li>
-      <li>application/pdf：pdf格式</li>
-      <li>application/msword ： Word文档格式</li>
+      <li>application/xhtml+xml ：XHTML 格式</li>
+      <li>application/xml： XML 数据格式</li>
+      <li>application/atom+xml ：Atom XML 聚合格式</li>
+      <li>application/json： JSON 数据格式</li>
+      <li>application/pdf：pdf 格式</li>
+      <li>application/msword ： Word 文档格式</li>
       <li>application/octet-stream ： 二进制流数据（如常见的文件下载）</li>
-      <li>application/x-www-form-urlencoded ： <code class="language-plaintext highlighter-rouge">&lt;form encType=""&gt;</code>中默认的encType，form表单数据被编码为key/value格式发送到服务器（表单默认的提交数据的格式）</li>
+      <li>application/x-www-form-urlencoded ： <code class="language-plaintext highlighter-rouge">&lt;form encType=""&gt;</code>中默认的 encType，form 表单数据被编码为 key/value 格式发送到服务器（表单默认的提交数据的格式）</li>
     </ul>
   </li>
 </ul>

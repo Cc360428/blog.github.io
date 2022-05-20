@@ -44,8 +44,8 @@
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Pprof" />
 <meta property="og:locale" content="zh_CN" />
-<meta name="description" content="Go pprof And Prometheus 在代码中使用" />
-<meta property="og:description" content="Go pprof And Prometheus 在代码中使用" />
+<meta name="description" content="Go pprof And Prometheus" />
+<meta property="og:description" content="Go pprof And Prometheus" />
 <link rel="canonical" href="http://localhost:4000/blog.github.io/posts/pprof/" />
 <meta property="og:url" content="http://localhost:4000/blog.github.io/posts/pprof/" />
 <meta property="og:site_name" content="Cc" />
@@ -54,7 +54,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Pprof" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-03-17T18:01:33+08:00","datePublished":"2021-03-17T18:01:33+08:00","description":"Go pprof And Prometheus 在代码中使用","headline":"Pprof","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog.github.io/posts/pprof/"},"url":"http://localhost:4000/blog.github.io/posts/pprof/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-03-17T18:01:33+08:00","datePublished":"2021-03-17T18:01:33+08:00","description":"Go pprof And Prometheus","headline":"Pprof","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog.github.io/posts/pprof/"},"url":"http://localhost:4000/blog.github.io/posts/pprof/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -272,7 +272,7 @@
       <a href="/blog.github.io/" class="mx-auto">
         
         
-        <img src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
+        <img src="https://cc360428.github.io/blog.github.io//commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
         
       </a>
     </div>
@@ -1003,19 +1003,20 @@
 <span class="p">)</span>
 
 <span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-  
+
  	<span class="k">go</span> <span class="k">func</span><span class="p">()</span> <span class="p">{</span>
 		<span class="n">http</span><span class="o">.</span><span class="n">Handle</span><span class="p">(</span><span class="s">"/metrics"</span><span class="p">,</span> <span class="n">promhttp</span><span class="o">.</span><span class="n">Handler</span><span class="p">())</span>
 		<span class="n">_</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">ListenAndServe</span><span class="p">(</span><span class="s">"14111"</span><span class="p">,</span> <span class="no">nil</span><span class="p">)</span> <span class="c">// '14111' 建议使用flag</span>
 	<span class="p">}()</span>
-  
+
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="浏览器查看"><span class="mr-2">浏览器查看</span><a href="#浏览器查看" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <blockquote>
   <p><code class="language-plaintext highlighter-rouge">http:/172.13.5.17:14111/debug/pprof/</code>
-<img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/utils/image-20211116163545492.png" alt="image-20211116163545492" data-proofer-ignore></p>
+<img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/utils/image-20211116163545492.png" alt="image-20211116163545492" data-proofer-ignore></p>
 </blockquote>
 
 <h3 id="使用命令行查看所有"><span class="mr-2">使用命令行查看所有</span><a href="#使用命令行查看所有" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
@@ -1103,11 +1104,11 @@ Showing top 10 nodes out of 207
       70ms  1.43% 61.84%     1590ms 32.45%  runtime.findrunnable
       70ms  1.43% 63.27%       90ms  1.84%  runtime.nanotime <span class="o">(</span>inline<span class="o">)</span>
       70ms  1.43% 64.69%       70ms  1.43%  runtime.siftdownTimer
-<span class="o">(</span>pprof<span class="o">)</span> 
+<span class="o">(</span>pprof<span class="o">)</span>
 
 go tool pprof http://172.13.5.17:14611/debug/pprof/heap  <span class="c"># heap 查看那部分代码占比 比较高</span>
-<span class="nt">--------------------------------</span> top 
-<span class="o">(</span>pprof<span class="o">)</span> top         
+<span class="nt">--------------------------------</span> top
+<span class="o">(</span>pprof<span class="o">)</span> top
 Showing nodes accounting <span class="k">for </span>28238.94kB, 80.86% of 34922.60kB total
 Showing top 10 nodes out of 151
       flat  flat%   <span class="nb">sum</span>%        cum   cum%
@@ -1121,7 +1122,7 @@ Showing top 10 nodes out of 151
  1052.25kB  3.01% 76.72%  1052.25kB  3.01%  sync.<span class="o">(</span><span class="k">*</span>Map<span class="o">)</span>.dirtyLocked
   902.59kB  2.58% 79.30%   902.59kB  2.58%  compress/flate.NewWriter
   544.67kB  1.56% 80.86%   544.67kB  1.56%  bytes.makeSlice
-<span class="o">(</span>pprof<span class="o">)</span> 
+<span class="o">(</span>pprof<span class="o">)</span>
 
 <span class="nt">--------------------------------</span> list 查看方法
 <span class="o">(</span>pprof<span class="o">)</span> list shuffle
@@ -1139,14 +1140,14 @@ ROUTINE <span class="o">========================</span> git.huoys.com/indonesia/
          <span class="nb">.</span>          <span class="nb">.</span>     16:
          <span class="nb">.</span>          <span class="nb">.</span>     17:// DispatchHandCardDebug Debug 发牌模式
          <span class="nb">.</span>          <span class="nb">.</span>     18:func <span class="o">(</span>p <span class="k">*</span>CardList<span class="o">)</span> DispatchHandCardDebug<span class="o">(</span>cardIds ...int<span class="o">)</span> <span class="k">*</span>HandCard <span class="o">{</span>
-<span class="o">(</span>pprof<span class="o">)</span> 
+<span class="o">(</span>pprof<span class="o">)</span>
 <span class="nt">--------------------------------</span> web （需要安装graphviz命令才能使用生成一个.svg 浏览器打开即可）
 
 
 
 <span class="nt">--------------------------------</span> 下面几个都可以使用 top list web <span class="p">;</span>或者可以直接 <span class="nb">help </span>查看帮助帮助命令
 go tool pprof http://172.13.5.17:14611/debug/pprof/allocs
-go tool pprof http://172.13.5.17:14611/debug/pprof/goroutine 
+go tool pprof http://172.13.5.17:14611/debug/pprof/goroutine
 go tool pprof http://172.13.5.17:14611/debug/pprof/mutex
 go tool pprof http://172.13.5.17:14611/debug/pprof/block
 
@@ -1159,8 +1160,8 @@ go tool pprof http://172.13.5.17:14611/debug/pprof/block
     <p>定位问题</p>
 
     <ul>
-      <li>查看服务使用cpu</li>
-      <li>内存使用情况磁盘和io使用情况</li>
+      <li>查看服务使用 cpu</li>
+      <li>内存使用情况磁盘和 io 使用情况</li>
     </ul>
   </li>
   <li>
@@ -1172,13 +1173,13 @@ go tool pprof http://172.13.5.17:14611/debug/pprof/block
           <tbody>
             <tr>
               <td>ps -aux</td>
-              <td>grep qiuqiu  ——–&gt; 查找服务</td>
+              <td>grep qiuqiu ——–&gt; 查找服务</td>
             </tr>
           </tbody>
         </table></div>
       </li>
-      <li>stop -p pid   ——–&gt; CPU 内存</li>
-      <li>iotop -p pid  ——–&gt; 磁盘io</li>
+      <li>stop -p pid ——–&gt; CPU 内存</li>
+      <li>iotop -p pid ——–&gt; 磁盘 io</li>
     </ul>
   </li>
   <li>
@@ -1189,28 +1190,27 @@ go tool pprof http://172.13.5.17:14611/debug/pprof/block
         <p>生成<code class="language-plaintext highlighter-rouge">pprof</code>文件</p>
 
         <ul>
-          <li>go tool pprof http://172.13.5.17:14611/debug/pprof/profile  （默认放在 <code class="language-plaintext highlighter-rouge">cd $HOME/pprof/</code> ）</li>
-          <li>可以看到会生成这样的文件  /Users/cc/pprof/pprof.qiuqiu.samples.cpu.002.pb.gz</li>
+          <li>go tool pprof http://172.13.5.17:14611/debug/pprof/profile （默认放在 <code class="language-plaintext highlighter-rouge">cd $HOME/pprof/</code> ）</li>
+          <li>可以看到会生成这样的文件 /Users/cc/pprof/pprof.qiuqiu.samples.cpu.002.pb.gz</li>
         </ul>
       </li>
       <li>
         <p>go tool pprof -http=0.0.0.0:999 /Users/cc/pprof/pprof.qiuqiu.samples.cpu.002.pb.gz （使用浏览器预览生成的文件查看服务状态）
-<img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/utils/image-20211116205320004.png" alt="image-20211116205320004" data-proofer-ignore></p>
+<img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/utils/image-20211116205320004.png" alt="image-20211116205320004" data-proofer-ignore></p>
       </li>
       <li>
         <p>查看火焰图方法</p>
 
-        <p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/utils/image-20211116210101838.png" alt="image-20211116210101838" data-proofer-ignore></p>
+        <p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/utils/image-20211116210101838.png" alt="image-20211116210101838" data-proofer-ignore></p>
       </li>
       <li>
         <p>火焰图详情</p>
 
-        <p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/utils/image-20211116210322094.png" alt="image-20211116210322094" data-proofer-ignore></p>
+        <p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/utils/image-20211116210322094.png" alt="image-20211116210322094" data-proofer-ignore></p>
       </li>
     </ul>
   </li>
 </ul>
-
 
 </div>
 
@@ -3299,8 +3299,8 @@ go tool pprof http://172.13.5.17:14611/debug/pprof/block
 
                 算法
 
-  常见的算法有
 
+  常见的算法有
 
 
 

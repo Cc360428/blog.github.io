@@ -44,8 +44,8 @@
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Day09（MapAndContainer）" />
 <meta property="og:locale" content="zh_CN" />
-<meta name="description" content="集合(map) 和容器(Container) 源码 Map" />
-<meta property="og:description" content="集合(map) 和容器(Container) 源码 Map" />
+<meta name="description" content="集合(map) 和容器(Container)" />
+<meta property="og:description" content="集合(map) 和容器(Container)" />
 <link rel="canonical" href="http://localhost:4000/blog.github.io/posts/mapAndContainer/" />
 <meta property="og:url" content="http://localhost:4000/blog.github.io/posts/mapAndContainer/" />
 <meta property="og:site_name" content="Cc" />
@@ -54,7 +54,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Day09（MapAndContainer）" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-04-25T10:00:24+08:00","datePublished":"2019-04-25T10:00:24+08:00","description":"集合(map) 和容器(Container) 源码 Map","headline":"Day09（MapAndContainer）","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog.github.io/posts/mapAndContainer/"},"url":"http://localhost:4000/blog.github.io/posts/mapAndContainer/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-04-25T10:00:24+08:00","datePublished":"2019-04-25T10:00:24+08:00","description":"集合(map) 和容器(Container)","headline":"Day09（MapAndContainer）","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog.github.io/posts/mapAndContainer/"},"url":"http://localhost:4000/blog.github.io/posts/mapAndContainer/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -272,7 +272,7 @@
       <a href="/blog.github.io/" class="mx-auto">
         
         
-        <img src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
+        <img src="https://cc360428.github.io/blog.github.io//commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
         
       </a>
     </div>
@@ -1022,11 +1022,13 @@
 
 <div class="post-content">
   <h2 id="集合map-和容器container"><span class="mr-2">集合(<code class="language-plaintext highlighter-rouge"><span class="mr-2">map</code>) 和容器(<code class="language-plaintext highlighter-rouge"><span class="mr-2">Container</code>)</span><a href="#集合map-和容器container" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <p><a href="https://gitee.com/GolangCodeFile/blogcode/tree/master/day09">源码</a></p>
+
 <h3 id="map"><span class="mr-2">Map</span><a href="#map" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <blockquote>
-  <p>Map是一种无序键值对的集合，通过<code class="language-plaintext highlighter-rouge">Key</code>来检索数据，<code class="language-plaintext highlighter-rouge">key</code> 类似索引，指向数据值，可以使用<code class="language-plaintext highlighter-rouge">for</code>迭代，但是 <code class="language-plaintext highlighter-rouge">map</code>是无序的，无法决定他的返回值顺序，这是因为<code class="language-plaintext highlighter-rouge">map</code> 是使用<code class="language-plaintext highlighter-rouge">hash</code> 来实现的</p>
+  <p>Map 是一种无序键值对的集合，通过<code class="language-plaintext highlighter-rouge">Key</code>来检索数据，<code class="language-plaintext highlighter-rouge">key</code> 类似索引，指向数据值，可以使用<code class="language-plaintext highlighter-rouge">for</code>迭代，但是 <code class="language-plaintext highlighter-rouge">map</code>是无序的，无法决定他的返回值顺序，这是因为<code class="language-plaintext highlighter-rouge">map</code> 是使用<code class="language-plaintext highlighter-rouge">hash</code> 来实现的</p>
 </blockquote>
 
 <h4 id="删除元素判断是否存在"><span class="mr-2">删除元素、判断是否存在</span><a href="#删除元素判断是否存在" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
@@ -1104,13 +1106,14 @@
 <span class="m">2020</span><span class="o">/</span><span class="m">04</span><span class="o">/</span><span class="m">25</span> <span class="m">10</span><span class="o">:</span><span class="m">30</span><span class="o">:</span><span class="m">05.858</span> <span class="p">[</span><span class="n">I</span><span class="p">]</span> <span class="p">[</span><span class="k">map</span><span class="o">.</span><span class="k">go</span><span class="o">:</span><span class="m">21</span><span class="p">]</span>  <span class="k">map</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">11</span> <span class="m">2</span><span class="o">:</span><span class="m">22</span> <span class="m">3</span><span class="o">:</span><span class="m">33</span> <span class="m">5</span><span class="o">:</span><span class="m">55</span><span class="p">]</span>
 <span class="m">2020</span><span class="o">/</span><span class="m">04</span><span class="o">/</span><span class="m">25</span> <span class="m">10</span><span class="o">:</span><span class="m">30</span><span class="o">:</span><span class="m">05.858</span> <span class="p">[</span><span class="n">I</span><span class="p">]</span> <span class="p">[</span><span class="k">map</span><span class="o">.</span><span class="k">go</span><span class="o">:</span><span class="m">24</span><span class="p">]</span>  <span class="n">check</span> <span class="n">key</span> <span class="n">no</span>
 </pre></td></tr></tbody></table></code></div></div>
+
 <h3 id="containerheaplistring"><span class="mr-2">Container（heap、list、ring）</span><a href="#containerheaplistring" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <ul>
   <li>单链表结构</li>
 </ul>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/base/单链表结构.jpg" alt="单链表结构" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/base/单链表结构.jpg" alt="单链表结构" data-proofer-ignore></p>
 
 <ul>
   <li>
@@ -1122,15 +1125,15 @@
   </li>
 </ul>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/base/双链表结构.jpg" alt="双链表结构" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/base/双链表结构.jpg" alt="双链表结构" data-proofer-ignore></p>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/base/双链表删除.jpg" alt="双链表删除" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/base/双链表删除.jpg" alt="双链表删除" data-proofer-ignore></p>
 
 <ul>
   <li>双向链表与环形链表</li>
 </ul>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/base/双向链表与环形链表.png" alt="双向链表与环形链表" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/base/双向链表与环形链表.png" alt="双向链表与环形链表" data-proofer-ignore></p>
 
 <h4 id="heap堆"><span class="mr-2">heap（堆）</span><a href="#heap堆" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
@@ -1139,10 +1142,10 @@
 </blockquote>
 
 <ul>
-  <li>heap包提供了对任意类型（实现了<code class="language-plaintext highlighter-rouge">heap.Interface</code>接口）的堆操作。（最小）堆是具有“每个节点都是以其为根的子树中最小值”属性的树。</li>
+  <li>heap 包提供了对任意类型（实现了<code class="language-plaintext highlighter-rouge">heap.Interface</code>接口）的堆操作。（最小）堆是具有“每个节点都是以其为根的子树中最小值”属性的树。</li>
   <li>树的最小元素为其根元素，索引<code class="language-plaintext highlighter-rouge">0</code>的位置。</li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">heap</code>是常用的实现优先队列的方法。要创建一个优先队列，实现一个具有使用（负的）优先级作为比较的依据的Less方法的Heap接口，如此一来可用Push添加项目而用Pop取出队列最高优先级的项目。</p>
+    <p><code class="language-plaintext highlighter-rouge">heap</code>是常用的实现优先队列的方法。要创建一个优先队列，实现一个具有使用（负的）优先级作为比较的依据的 Less 方法的 Heap 接口，如此一来可用 Push 添加项目而用 Pop 取出队列最高优先级的项目。</p>
   </li>
   <li>实现优先队列</li>
 </ul>
@@ -1452,8 +1455,8 @@
 2
 3
 4
-</pre></td><td class="rouge-code"><pre><span class="n">hello</span> <span class="m">18</span> <span class="n">lcc</span> 
-<span class="n">hello</span> <span class="n">World</span> <span class="m">18</span> <span class="n">Cc</span> <span class="n">lcc</span> 
+</pre></td><td class="rouge-code"><pre><span class="n">hello</span> <span class="m">18</span> <span class="n">lcc</span>
+<span class="n">hello</span> <span class="n">World</span> <span class="m">18</span> <span class="n">Cc</span> <span class="n">lcc</span>
 <span class="n">lcc2020</span><span class="o">/</span><span class="m">04</span><span class="o">/</span><span class="m">25</span> <span class="m">16</span><span class="o">:</span><span class="m">16</span><span class="o">:</span><span class="m">21.548</span> <span class="p">[</span><span class="n">I</span><span class="p">]</span> <span class="p">[</span><span class="n">list</span><span class="o">.</span><span class="k">go</span><span class="o">:</span><span class="m">39</span><span class="p">]</span>  <span class="n">hello</span>
 <span class="m">2020</span><span class="o">/</span><span class="m">04</span><span class="o">/</span><span class="m">25</span> <span class="m">16</span><span class="o">:</span><span class="m">16</span><span class="o">:</span><span class="m">21.577</span> <span class="p">[</span><span class="n">I</span><span class="p">]</span> <span class="p">[</span><span class="n">list</span><span class="o">.</span><span class="k">go</span><span class="o">:</span><span class="m">41</span><span class="p">]</span>  <span class="n">lcc</span>
 </pre></td></tr></tbody></table></code></div></div>
@@ -1463,7 +1466,7 @@
 <blockquote>
   <p><a href="https://studygolang.com/static/pkgdoc/pkg/container_ring.htm">源码文档</a></p>
 
-  <p>ring实现了环形链表的操作</p>
+  <p>ring 实现了环形链表的操作</p>
 </blockquote>
 
 <div class="language-go highlighter-rouge"><div class="code-header">
@@ -1567,7 +1570,6 @@
 <span class="m">2020</span><span class="o">/</span><span class="m">04</span><span class="o">/</span><span class="m">25</span> <span class="m">16</span><span class="o">:</span><span class="m">15</span><span class="o">:</span><span class="m">42.218</span> <span class="p">[</span><span class="n">I</span><span class="p">]</span> <span class="p">[</span><span class="n">ring</span><span class="o">.</span><span class="k">go</span><span class="o">:</span><span class="m">30</span><span class="p">]</span>  <span class="m">2</span>
 <span class="m">2020</span><span class="o">/</span><span class="m">04</span><span class="o">/</span><span class="m">25</span> <span class="m">16</span><span class="o">:</span><span class="m">15</span><span class="o">:</span><span class="m">42.218</span> <span class="p">[</span><span class="n">I</span><span class="p">]</span> <span class="p">[</span><span class="n">ring</span><span class="o">.</span><span class="k">go</span><span class="o">:</span><span class="m">30</span><span class="p">]</span>  <span class="m">3</span>
 </pre></td></tr></tbody></table></code></div></div>
-
 
 </div>
 

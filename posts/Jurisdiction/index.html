@@ -272,7 +272,7 @@
       <a href="/blog.github.io/" class="mx-auto">
         
         
-        <img src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
+        <img src="https://cc360428.github.io/blog.github.io//commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'">
         
       </a>
     </div>
@@ -852,13 +852,13 @@
   <p>权限是每一个管理系统必备的一个功能，多租用户设计必备，虽然有很多集成框架工具包比如：“<code class="language-plaintext highlighter-rouge">Casbin</code>、<code class="language-plaintext highlighter-rouge">GRABC</code>”，但是其怎么判断其实原理都是一样的</p>
 </blockquote>
 
-<p><img data-src="https://raw.githubusercontent.com/cotes2020/chirpy-images/main/golang/utils/权限.png" alt="权限数据图" data-proofer-ignore></p>
+<p><img data-src="https://cc360428.github.io/blog.github.io//assets/img/golang/utils/权限.png" alt="权限数据图" data-proofer-ignore></p>
 
 <h4 id="表结构说明"><span class="mr-2">表结构说明</span><a href="#表结构说明" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <ul>
   <li>用户表和用户与角色中间表：无论是超级管理员添加的还是注册用户都会有一个角色初始权限。如果是超级管理员添加添加是可以指定那些角色，角色中有哪些权限，如果是<code class="language-plaintext highlighter-rouge">App</code>用户注册的有哪些权限注册时会初始化一个最初权限，可以通过开通会员，或者做任务升级拥有想应得角色。在此可能会产生一个用户多个角色，所以会有用户表与角色中间表来记录</li>
-  <li>资源表：可以使用swagger工具与注解，在启动是扫描所有接口并且通过递归解析<code class="language-plaintext highlighter-rouge">swagger.json</code>文件，初始化所有接口名称与接口<code class="language-plaintext highlighter-rouge">url</code>，插入表中</li>
+  <li>资源表：可以使用 swagger 工具与注解，在启动是扫描所有接口并且通过递归解析<code class="language-plaintext highlighter-rouge">swagger.json</code>文件，初始化所有接口名称与接口<code class="language-plaintext highlighter-rouge">url</code>，插入表中</li>
   <li>角色表：在程序初始化时需要，在表中初始默认角色，或者管理员用户添加角色时选择相应资源</li>
 </ul>
 
@@ -904,7 +904,7 @@
 
 <ul>
   <li>
-    <p>下载<code class="language-plaintext highlighter-rouge">swagger</code>  工具添加，<code class="language-plaintext highlighter-rouge">Go</code> 环境的<code class="language-plaintext highlighter-rouge">bin</code> 目录下</p>
+    <p>下载<code class="language-plaintext highlighter-rouge">swagger</code> 工具添加，<code class="language-plaintext highlighter-rouge">Go</code> 环境的<code class="language-plaintext highlighter-rouge">bin</code> 目录下</p>
   </li>
   <li>
     <p>进入项目根目录 <code class="language-plaintext highlighter-rouge">swag init</code> 生成或者使用以下方式</p>
@@ -1124,7 +1124,6 @@
 	<span class="k">return</span> <span class="n">s</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
-
 
 </div>
 
@@ -3241,8 +3240,8 @@ import (
 )
 
 func main() {
-  
- 	go fu...
+
+ 	go func...
               </p>
             </div>
           </div>
@@ -3281,8 +3280,8 @@ func main() {
 
                 算法
 
-  常见的算法有
 
+  常见的算法有
 
 
 

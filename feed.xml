@@ -4,7 +4,7 @@
   <id>http://localhost:4000/blog.github.io/</id>
   <title>Cc</title>
   <subtitle>查看所有</subtitle>
-  <updated>2022-05-18T21:24:56+08:00</updated>
+  <updated>2022-05-20T23:29:40+08:00</updated>
   <author>
     <name>Cc</name>
     <uri>http://localhost:4000/blog.github.io/</uri>
@@ -312,16 +312,17 @@ import (
 )
 
 func main() {
-  
+
  	go func() {
 		http.Handle("/metrics", promhttp.Handler())
 		_ = http.ListenAndServe("14111", nil) // '14111' 建议使用flag
 	}()
-  
+
 }
 
 
 浏览器查看
+
 
   http:/172.13.5.17:14111/debug/pprof/
 
@@ -329,7 +330,7 @@ func main() {
 
 使用命令行查看所有
 
-go tool pprof http://172.13.5.17:14611/debug/pprof/...
+go tool pprof http://172.13.5.17:14611/debug/pprof/pro...
     </summary>
   
 

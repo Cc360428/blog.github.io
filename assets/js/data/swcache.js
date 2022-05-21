@@ -1,47 +1,47 @@
 const resource = [
 
   /* --- CSS --- */
-  '/blog.github.io/assets/css/style.css',
+  '/assets/css/style.css',
 
   /* --- PWA --- */
-  '/blog.github.io/app.js',
-  '/blog.github.io/sw.js',
+  '/app.js',
+  '/sw.js',
 
   /* --- HTML --- */
-  '/blog.github.io/index.html',
-  '/blog.github.io/404.html',
+  '/index.html',
+  '/404.html',
   
-    '/blog.github.io/categories/',
+    '/categories/',
   
-    '/blog.github.io/tags/',
+    '/tags/',
   
-    '/blog.github.io/archives/',
+    '/archives/',
   
-    '/blog.github.io/about/',
+    '/about/',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/blog.github.io/assets/img/favicons/all.png',
-    '/blog.github.io/assets/img/favicons/android-chrome-192x192.png',
-    '/blog.github.io/assets/img/favicons/android-chrome-512x512.png',
-    '/blog.github.io/assets/img/favicons/apple-touch-icon.png',
-    '/blog.github.io/assets/img/favicons/browserconfig.xml',
-    '/blog.github.io/assets/img/favicons/favicon-16x16.png',
-    '/blog.github.io/assets/img/favicons/favicon-32x32.png',
-    '/blog.github.io/assets/img/favicons/favicon.ico',
-    '/blog.github.io/assets/img/favicons/mstile-150x150.png',
-    '/blog.github.io/assets/img/favicons/safari-pinned-tab.svg',
-    '/blog.github.io/assets/img/favicons/site.webmanifest',
-    '/blog.github.io/assets/js/dist/categories.min.js',
-    '/blog.github.io/assets/js/dist/commons.min.js',
-    '/blog.github.io/assets/js/dist/home.min.js',
-    '/blog.github.io/assets/js/dist/misc.min.js',
-    '/blog.github.io/assets/js/dist/page.min.js',
-    '/blog.github.io/assets/js/dist/post.min.js',
-    '/blog.github.io/assets/js/dist/pvreport.min.js',
-    '/blog.github.io/assets/img/favicons/.DS_Store'
+    '/assets/img/favicons/all.png',
+    '/assets/img/favicons/android-chrome-192x192.png',
+    '/assets/img/favicons/android-chrome-512x512.png',
+    '/assets/img/favicons/apple-touch-icon.png',
+    '/assets/img/favicons/browserconfig.xml',
+    '/assets/img/favicons/favicon-16x16.png',
+    '/assets/img/favicons/favicon-32x32.png',
+    '/assets/img/favicons/favicon.ico',
+    '/assets/img/favicons/mstile-150x150.png',
+    '/assets/img/favicons/safari-pinned-tab.svg',
+    '/assets/img/favicons/site.webmanifest',
+    '/assets/js/dist/categories.min.js',
+    '/assets/js/dist/commons.min.js',
+    '/assets/js/dist/home.min.js',
+    '/assets/js/dist/misc.min.js',
+    '/assets/js/dist/page.min.js',
+    '/assets/js/dist/post.min.js',
+    '/assets/js/dist/pvreport.min.js',
+    '/assets/img/favicons/.DS_Store'
 
 ];
 

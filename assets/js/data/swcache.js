@@ -23,21 +23,25 @@ const resource = [
   /* --- Favicons & compressed JS --- */
   
   
-    '/blog.github.io/assets/img/favicons/1apple-touch-icon.png',
+    '/blog.github.io/assets/img/favicons/all.png',
     '/blog.github.io/assets/img/favicons/android-chrome-192x192.png',
     '/blog.github.io/assets/img/favicons/android-chrome-512x512.png',
     '/blog.github.io/assets/img/favicons/apple-touch-icon.png',
+    '/blog.github.io/assets/img/favicons/browserconfig.xml',
     '/blog.github.io/assets/img/favicons/favicon-16x16.png',
     '/blog.github.io/assets/img/favicons/favicon-32x32.png',
     '/blog.github.io/assets/img/favicons/favicon.ico',
     '/blog.github.io/assets/img/favicons/mstile-150x150.png',
+    '/blog.github.io/assets/img/favicons/safari-pinned-tab.svg',
+    '/blog.github.io/assets/img/favicons/site.webmanifest',
     '/blog.github.io/assets/js/dist/categories.min.js',
     '/blog.github.io/assets/js/dist/commons.min.js',
     '/blog.github.io/assets/js/dist/home.min.js',
     '/blog.github.io/assets/js/dist/misc.min.js',
     '/blog.github.io/assets/js/dist/page.min.js',
     '/blog.github.io/assets/js/dist/post.min.js',
-    '/blog.github.io/assets/js/dist/pvreport.min.js'
+    '/blog.github.io/assets/js/dist/pvreport.min.js',
+    '/blog.github.io/assets/img/favicons/.DS_Store'
 
 ];
 

@@ -324,7 +324,7 @@
     
     <li class="nav-item">
       <a href="/blog.github.io/about/" class="nav-link">
-        <i class="fa-fw  ml-xl-3 mr-xl-3 unloaded"></i>
+        <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i>
         
 
         <span>关于</span>
@@ -854,11 +854,11 @@
     </ul>
   </li>
   <li>数据类型一般应用场景</li>
-  <li>redis持久化</li>
+  <li>redis 持久化</li>
   <li>redis 与 mongoDB 区别
     <ul>
       <li>redis 支持事务（），mongoDB 不支持</li>
-      <li>redis适合做缓存读写速度忧，mongoDb 适合大数据存储</li>
+      <li>redis 适合做缓存读写速度忧，mongoDb 适合大数据存储</li>
     </ul>
   </li>
 </ul>
@@ -868,7 +868,7 @@
 <ul>
   <li>数据类型转换
     <ul>
-      <li>interface 传位置struct</li>
+      <li>interface 传位置 struct</li>
     </ul>
   </li>
   <li>协程
@@ -952,8 +952,8 @@
       <li>适当加入索引</li>
       <li>查询语句优化
         <ul>
-          <li>避免使用select *</li>
-          <li>尽量count *</li>
+          <li>避免使用 select *</li>
+          <li>尽量 count *</li>
           <li>查询一条时使用 limit 1</li>
           <li>查询精确到目标字段</li>
         </ul>
@@ -968,7 +968,7 @@
 
 <ul>
   <li>
-    <p>写出HTTP 协议中你熟悉的几种状态码以及含义，499是什么状态码</p>
+    <p>写出 HTTP 协议中你熟悉的几种状态码以及含义，499 是什么状态码</p>
 
     <ul>
       <li>200 请求成功</li>
@@ -984,7 +984,7 @@
     </ul>
   </li>
   <li>
-    <p>如何防范SQL注入</p>
+    <p>如何防范 SQL 注入</p>
 
     <blockquote>
       <p>https://www.cnblogs.com/mafeng/p/6207988.html</p>
@@ -992,12 +992,12 @@
 
     <ul>
       <li>校验用户输入的数据（strconv、正则判断）</li>
-      <li>在应用发布前 只用sql 注入工具进行检测</li>
-      <li>查询语句使用参数化查询，不用输入的变量直接嵌入到SQL语句中</li>
+      <li>在应用发布前 只用 sql 注入工具进行检测</li>
+      <li>查询语句使用参数化查询，不用输入的变量直接嵌入到 SQL 语句中</li>
     </ul>
   </li>
   <li>
-    <p>把文件夹/home/interview里面包含有关键字yunke 的文件和行列出，如果可以，上下一行一起列出 grep -RnC 2 “yunke” /home/interview/</p>
+    <p>把文件夹/home/interview 里面包含有关键字 yunke 的文件和行列出，如果可以，上下一行一起列出 grep -RnC 2 “yunke” /home/interview/</p>
   </li>
   <li>
     <p>二叉树</p>
@@ -1007,7 +1007,7 @@
     </ul>
   </li>
   <li>
-    <p>Redis的常见的数据类型有哪些，请描述不同的类型使用常见</p>
+    <p>Redis 的常见的数据类型有哪些，请描述不同的类型使用常见</p>
 
     <ul>
       <li>string（字符串）
@@ -1015,7 +1015,7 @@
       <li>hash（字典）
 用户基本信息、应用目录</li>
       <li>list（列表链表）
-单个列表型结构，可以实现轻量级的消息队列 生产者push ,消费者pop/bpop</li>
+单个列表型结构，可以实现轻量级的消息队列 生产者 push ,消费者 pop/bpop</li>
       <li>set（集合）
 唯一类型的标签、朋友名单</li>
       <li>sorted set（有序集合）
@@ -1023,22 +1023,22 @@
     </ul>
   </li>
   <li>
-    <p>tcp协议udp协议有什么区别，请画出tcp三次握手的示意图</p>
+    <p>tcp 协议 udp 协议有什么区别，请画出 tcp 三次握手的示意图</p>
 
     <ul>
-      <li>tcp面向连接，udp面向无连接</li>
-      <li>系统资源要求（tcp多，udp少）</li>
-      <li>udp数据结构简单</li>
-      <li>tcp保证数据准确性，udp 有可能丢包</li>
-      <li>tcp流模式,udp数据报模式
+      <li>tcp 面向连接，udp 面向无连接</li>
+      <li>系统资源要求（tcp 多，udp 少）</li>
+      <li>udp 数据结构简单</li>
+      <li>tcp 保证数据准确性，udp 有可能丢包</li>
+      <li>tcp 流模式,udp 数据报模式
 示意图： <img data-src="http://lichaocheng.top:8072/static/upload/2019/12/17/60cb05a34b5a3e650436401efb343f7f.png" alt="示意图" data-proofer-ignore></li>
     </ul>
   </li>
   <li>
-    <p>innoDB的行级别锁的实现方式（需要具备什么条件，不然会出现表锁） mysql 语句必须使用索引，如果没索引就会出现表锁</p>
+    <p>innoDB 的行级别锁的实现方式（需要具备什么条件，不然会出现表锁） mysql 语句必须使用索引，如果没索引就会出现表锁</p>
   </li>
   <li>
-    <p>写出以下go代码的输出结果</p>
+    <p>写出以下 go 代码的输出结果</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span>
@@ -1081,7 +1081,7 @@
 
     <ul>
       <li>slice、map、channel、指针</li>
-      <li>变量存储的是一个地址，这个地址存储最终的值。内存通常在 堆上分配。通过GC回收</li>
+      <li>变量存储的是一个地址，这个地址存储最终的值。内存通常在 堆上分配。通过 GC 回收</li>
     </ul>
   </li>
   <li>
@@ -1094,10 +1094,10 @@
     </ul>
   </li>
   <li>
-    <p>一个有序列1，1，2，3，5，8，13，21 ，。。。。请识别这个有序列的规律，并用递归写一个求第n位的值的函数（默认从0开始）</p>
+    <p>一个有序列 1，1，2，3，5，8，13，21 ，。。。。请识别这个有序列的规律，并用递归写一个求第 n 位的值的函数（默认从 0 开始）</p>
   </li>
   <li>
-    <p>在电商的秒杀商品场景中，怎样考虑高并发（1000并发）下的性能和库存量的准确性</p>
+    <p>在电商的秒杀商品场景中，怎样考虑高并发（1000 并发）下的性能和库存量的准确性</p>
 
     <ul>
       <li>静态资源优化（html，CSS）</li>
@@ -1107,11 +1107,11 @@
     </ul>
   </li>
   <li>
-    <p>什么内存溢出？请编写一段造成溢出的Go程序，并简述说明原因</p>
+    <p>什么内存溢出？请编写一段造成溢出的 Go 程序，并简述说明原因</p>
 
     <ul>
       <li>
-        <p>堆栈超过100000000字节的限制</p>
+        <p>堆栈超过 100000000 字节的限制</p>
 
         <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span>
@@ -1133,7 +1133,7 @@
         return Max(a, b)
     }
 }
-    
+
 func main() {
     fmt.Println(Max(1, 2))
 }
@@ -1142,12 +1142,12 @@ func main() {
     </ul>
   </li>
   <li>
-    <p>监控发现流量暴增（来自用户正常流量和非法流量），同时server的memory持续增长，cpu虽有增高，单一直没有打满，tcp连接数也居高不下，通过工具发现，runtime.gcBgMarkWorker、runtime.mellocgc开销较大，请问遇到这种情况，应该怎么定位问题，去尝试分析，并写出可能为问题（可以多个可能），并写出每个可能出现问题的方案</p>
+    <p>监控发现流量暴增（来自用户正常流量和非法流量），同时 server 的 memory 持续增长，cpu 虽有增高，单一直没有打满，tcp 连接数也居高不下，通过工具发现，runtime.gcBgMarkWorker、runtime.mellocgc 开销较大，请问遇到这种情况，应该怎么定位问题，去尝试分析，并写出可能为问题（可以多个可能），并写出每个可能出现问题的方案</p>
 
     <ul>
-      <li>调用第三方数据中心时可以grpc或者rpc</li>
+      <li>调用第三方数据中心时可以 grpc 或者 rpc</li>
       <li>校验用户来访限制</li>
-      <li>使用采用gc池</li>
+      <li>使用采用 gc 池</li>
     </ul>
   </li>
 </ul>
@@ -1247,11 +1247,6 @@ func main() {
         
         
         
-      <li><a href="/blog.github.io/posts/base/">linux Shell Base</a></li>
-      
-        
-        
-        
       <li><a href="/blog.github.io/posts/redis-all/">Redis 汇总</a></li>
       
         
@@ -1268,6 +1263,11 @@ func main() {
         
         
       <li><a href="/blog.github.io/posts/pprof/">Pprof</a></li>
+      
+        
+        
+        
+      <li><a href="/blog.github.io/posts/algorithm/">Golang 算法</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
